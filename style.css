@@ -44,3 +44,56 @@ body {
 .social-icons a:hover {
   opacity: 1;
 }
+.banner {
+  height: 427px;
+}
+.main {
+  float: left;
+  background: #fff;
+  width: calc(100% - 375px);
+}
+.sideBar {
+  float: right;
+  background: #fbfbfb;
+  font-size: 17px;
+  width: 375px;
+  padding: 40px;
+}
+.sideBar-title {
+  font-size: 30px;
+  color: #000;
+  margin: 15px 0;
+}
+.sideBar a {
+  color: #9f9f9f;
+  text-decoration: none;
+}
+.sideBar ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.sideBar li {
+  padding: 6.5px 0;
+}
+.sideBar li:first-child {
+  padding-top: 0;
+}
+.sideBar li:last-child {
+  padding-bottom: 0;
+}
+.sideBar a:hover {
+  text-decoration: underline;
+}
+.sideBar-title:first-child {
+  margin-top: 0;
+}
+.sideBar hr {
+  border: none;
+  height: 1px;
+  background: #c4c4c4;
+  margin: 50px 0;
+}
+.footer {
+  clear: both;
+}
