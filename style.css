@@ -1,12 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap");
 * {
   box-sizing: border-box;
 }
 
-body {
+body,
+html {
   font-size: 16px;
   color: (rgba(0, 0, 0, 0.87));
   font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  background: #fbfbfb;
   line-height: 1.8;
   margin: 0;
 }
@@ -18,6 +22,8 @@ body {
   width: 100%;
   background: #fff;
   padding: 31.1px 87.1px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  z-index: 3;
 }
 .topBar nav {
   float: left;
@@ -51,6 +57,8 @@ body {
   float: left;
   background: #fff;
   width: calc(100% - 375px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+  z-index: 2;
 }
 .sideBar {
   float: right;
@@ -58,6 +66,7 @@ body {
   font-size: 17px;
   width: 375px;
   padding: 40px;
+  z-index: -1;
 }
 .sideBar-title {
   font-size: 30px;
@@ -94,6 +103,49 @@ body {
   background: #c4c4c4;
   margin: 50px 0;
 }
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+}
+.article {
+  position: relative;
+  margin: 50px 0;
+  padding-left: 333px;
+  min-height: 203px;
+  text-align: justify;
+}
+.article a {
+  color: inherit;
+  text-decoration: none;
+}
+article a:hover {
+  text-decoration: underline;
+}
+.article-img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 308px;
+  margin-right: 25px;
+}
+.article-date {
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 5px;
+}
+.article-title {
+  font-family: "Cardo", serif;
+  font-size: 2.25rem;
+  line-height: 1.1;
+  margin: 0 0 15px 0;
+}
+.article-img img {
+  width: 100%;
+  height: auto;
+}
+
 .footer {
   clear: both;
+  background-color: #fff;
+  text-align: center;
 }
